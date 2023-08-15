@@ -19,7 +19,10 @@ const initReddio = () => {
 };
 
 const generateKey = async () => {
-    key = await reddio.keypair.generateFromEthSignature()
+    key = {
+        "privateKey": "17b900ade984d0886d4dfea7d4d74a08cf4aeda8589b21d1b4b7dc36e2e1045",
+        "publicKey": "0x1e6c020796cfda4a88178817361647376df8a2415404e5a7cf6784bd3b0fbb4"
+    }
 }
 
 const depositUSDC = async (amount: number) => {
