@@ -22,7 +22,7 @@ const generateKey = async () => {
     key = await reddio.keypair.generateFromEthSignature()
 }
 
-const depositUSDT = async (amount: number) => {
+const depositUSDC = async (amount: number) => {
     const tx = await reddio.erc20.approve({
         tokenAddress: usdcContractAddress,
         amount,
@@ -35,7 +35,7 @@ const depositUSDT = async (amount: number) => {
     });
 }
 
-const withdrawUSDT = async (amount: number) => {
+const withdrawUSDC = async (amount: number) => {
     const params: SignTransferParams = {
         starkKey: key.publicKey,
         privateKey: key.privateKey,
@@ -71,4 +71,4 @@ const withdrawToWallet = async (item: any) => {
     });
 }
 
-export { initReddio, generateKey, depositUSDT, getBalance, withdrawUSDT, getWithdrawArea, withdrawToWallet }
+export { initReddio, generateKey, depositUSDC, getBalance, withdrawUSDC, getWithdrawArea, withdrawToWallet }

@@ -1,5 +1,5 @@
 import React, {useCallback, useState} from "react";
-import {getBalance, withdrawUSDT} from "@/config/config";
+import {getBalance, withdrawUSDC} from "@/config/config";
 import useSWR from "swr";
 import {ethers} from "ethers";
 
@@ -11,7 +11,7 @@ export default function Withdraw() {
     const withdraw = useCallback(
         async (type: any) => {
             try {
-                await withdrawUSDT(Number(amount))
+                await withdrawUSDC(Number(amount))
             } catch (e) {
                 console.log(e);
             }

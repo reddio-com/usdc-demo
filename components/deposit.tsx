@@ -1,12 +1,12 @@
 import React, {useCallback, useState} from "react";
-import {depositUSDT} from "@/config/config";
+import {depositUSDC} from "@/config/config";
 
 export default function Deposit() {
     const [amount, setAmount] = useState('')
     const deposit = useCallback(
         async (type: any) => {
             try {
-                await depositUSDT(Number(amount))
+                await depositUSDC(Number(amount))
             } catch (e) {
                 console.log(e);
             }
