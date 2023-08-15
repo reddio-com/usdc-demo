@@ -21,7 +21,7 @@ export default function Withdraw() {
 
     return <div>
         <p className="Text">
-            You can withdraw {ethers.utils.formatUnits(balanceData?.balance_available || 0, balanceData?.decimals)} USDT to withdraw area here.
+            You can withdraw {ethers.utils.formatUnits(balanceData?.balance_available || 0, balanceData?.decimals)} UDSC to withdraw area here.
         </p>
         <fieldset className="Fieldset">
             <label className="Label" htmlFor="amount">

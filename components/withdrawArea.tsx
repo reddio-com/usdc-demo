@@ -22,7 +22,7 @@ export default function WithdrawArea() {
 
     return <div>
         <p className="Text">
-            You can withdraw {value} USDT to your wallet here.
+            You can withdraw {value} UDSC to your wallet here.
         </p>
         <div
             style={{ display: 'flex', marginTop: 20, justifyContent: 'flex-end' }}

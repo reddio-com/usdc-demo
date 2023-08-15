@@ -16,7 +16,7 @@ export default function Deposit() {
 
     return <div>
         <p className="Text">
-            You can deposit USDT to your account here.
+            You can deposit UDSC to your account here.
         </p>
         <fieldset className="Fieldset">
             <label className="Label" htmlFor="amount">
